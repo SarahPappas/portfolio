@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 16pt;
+  font-family: "Amatica SC", cursive; }
+
+.site-container {
+  height: 100%;
+  width: 100%;
+  /* flex child element settings*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+
+.header {
+  box-sizing: border-box;
+  height: 87vh;
+  background-color: red;
+  padding: 8em 4em;
+  flex-grow: 1;
+  /* flex child element settings*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between; }
+
+.home-body {
+  box-sizing: border-box;
+  background-color: blue;
+  padding: 2em;
+  flex-grow: 1;
+  flex-basis: 40%; }
+
+.header-main {
+  display: block;
+  flex-grow: 0; }
+
+.footer {
+  display: block;
+  flex-grow: 0; }
+
+.headline {
+  color: purple;
+  font-size: 1em; }

@@ -1,0 +1,65 @@
+$primary-color: purple;
+$padding-large: 8em 4em;
+$padding-mediium: 2em;
+$font-size: 16pt;
+$font-header: 'Amatica SC', cursive;
+
+
+body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	font-size: $font-size;
+	font-family: $font-header; 
+}
+
+.site-container {
+	height: 100%;
+	width: 100%;
+	/* flex child element settings*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.header {
+	box-sizing: border-box;
+	height: 87vh;
+	background-color: red;
+	padding: $padding-large;
+	flex-grow: 1;
+	/* flex child element settings*/
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.home-body {
+	box-sizing: border-box;
+	background-color: blue;
+	padding: $padding-mediium;
+	flex-grow: 1;
+	flex-basis: 40%;
+}
+
+.header-main {
+	display: block;
+	flex-grow: 0;
+}
+
+.footer {
+	display: block;
+	flex-grow: 0;
+}
+
+.headline {
+	color: $primary-color;
+	font-size: 1em;
+}
+
+
+
+
+
