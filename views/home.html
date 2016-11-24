@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>Sarah Pappas's Web Development Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="/css/home.css">
+	<base href="../public/">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 </head>
 <body>
@@ -24,7 +25,11 @@
 			</div>
 		</div>
 		<div class="home-body">
-			<%- body %>
+			<div class="body-container">
+				<div class="section">intro</div>
+				<div class="section">project</div>
+				<div class="section">project</div>
+			</div>
 		</div>
 	</div>
 </body>

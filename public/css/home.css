@@ -17,12 +17,12 @@ body {
 
 .header {
   box-sizing: border-box;
-  height: 87vh;
+  height: 120vh;
   color: black;
   padding: 8em 4em;
   flex-grow: 1;
   text-align: right;
-  background-image: url(/img/landscape.jpg);
+  background-image: url(../img/landscape.jpg);
   background-position: 700px 0;
   background-size: cover;
   /* flex child element settings*/
@@ -54,7 +54,7 @@ body {
   font-size: 1em; }
 
 .body-container {
-  height: 75vh;
+  height: 105vh;
   overflow: scroll; }
   .body-container .section {
     height: 400px;

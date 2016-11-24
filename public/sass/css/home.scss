@@ -27,12 +27,12 @@ body {
 
 .header {
 	box-sizing: border-box;
-	height: 87vh;
+	height: 120vh;
 	color: $color-header;
 	padding: $padding-large;
 	flex-grow: 1;
 	text-align: right;
-	background-image: url(/img/landscape.jpg);
+	background-image: url(../img/landscape.jpg);
 	background-position: 700px 0;
 	background-size: cover;
 	/* flex child element settings*/
@@ -71,7 +71,7 @@ body {
 
 .body-container {
 
-	height: 75vh;
+	height: 105vh;
 	overflow: scroll;
 
 	.section {
