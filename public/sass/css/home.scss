@@ -1,24 +1,33 @@
 $primary-color: purple;
 $color-header: black;
-$padding-large: 8em 4em;
-$padding-mediium: 2em;
-$font-size: 16pt;
+$padding-large: 12.8rem 6.4rem;
+$padding-medium: 3.2rem;
+$body-font-size: 2.0rem;
 $font-header: 'Lato', sans-serif;
 
+html {
+	/* text */
+	font-size: 10px;
+}
 
 body {
-	margin: 0;
+	/* box */
 	height: 100%;
 	width: 100%;
-	font-size: $font-size;
+	margin: 0;
+
+	/* text */
 	font-family: $font-header;
+	font-size: $body-font-size;
 	font-weight: 100; 
 }
 
 .site-container {
+	/* box */
 	height: 100%;
 	width: 100%;
-	/* flex child element settings*/
+
+	/* flex child element settings */
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -26,16 +35,22 @@ body {
 }
 
 .header {
+	/* box */
 	box-sizing: border-box;
-	height: 120vh;
-	color: $color-header;
-	padding: $padding-large;
 	flex-grow: 1;
-	text-align: right;
+	padding: $padding-large;
+	height: 120vh;
+
+	/* background */
 	background-image: url(../img/landscape.jpg);
 	background-position: 700px 0;
 	background-size: cover;
-	/* flex child element settings*/
+
+	/* text */
+	color: $color-header;
+	text-align: right;
+
+	/* flex child element settings */
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -43,40 +58,105 @@ body {
 }
 
 .home-body {
+	/* box */
 	box-sizing: border-box;
-	padding: $padding-mediium;
-	flex-grow: 1;
 	flex-basis: 50%;
+	flex-grow: 1;
+	padding: $padding-medium;
 }
 
 .header-main {
+	/* box */
 	display: block;
 	flex-grow: 0;
+
 	.profile-pic {
-		width: 100px;
-		height: 100px;
+		/* box */
 		border-radius: 50%;
+		height: 100px;
+		width: 100px;
 	}
 }
 
 .footer {
+	/* box */
 	display: block;
 	flex-grow: 0;
 	font-size: .8em;
+	position: relative;
+
+	.link-text {
+		/* box */
+	    display: none;
+	}
+	    
+	a:hover + .link-text {
+		/* box */
+	    display: block;
+
+	    /* text */
+	    font-size: $body-font-size;
+	}
+
+	a:active + .link-text {
+		/* box */
+	    display: block;
+
+	    /* text */
+	    font-size: $body-font-size;
+	}
+
+	a {
+		/* text */
+		color: rgba(255, 255, 255, .5);
+		font-size: 3em;
+	}
+
+}
+
+.paragraph-bold {
+	/* text */
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 2em;
+	letter-spacing: .1em;
 }
 
 .headline {
+	/* text */
 	font-size: 1em;
 }
 
 .body-container {
-
+	/* box */
 	height: 105vh;
+
+	/* effects */
 	overflow: scroll;
 
 	.section {
-		height: 400px;
+		/* box */
 		border-bottom: solid 2px #ccc;
+
+		img {
+			/* box */
+			max-width: 100%;
+			height: auto;
+
+			/* effects */
+			overflow: hidden;
+		}
+
+		.pause-img {
+			/* text */
+			font-size: 80px;
+			text-align: center;
+		}
+
+		.gif {
+			/* box*/
+			display: none;
+		}
 	}
 }
 

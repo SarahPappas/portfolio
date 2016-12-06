@@ -1,61 +1,116 @@
+html {
+  /* text */
+  font-size: 10px; }
+
 body {
-  margin: 0;
+  /* box */
   height: 100%;
   width: 100%;
-  font-size: 16pt;
+  margin: 0;
+  /* text */
   font-family: "Lato", sans-serif;
+  font-size: 2rem;
   font-weight: 100; }
 
 .site-container {
+  /* box */
   height: 100%;
   width: 100%;
-  /* flex child element settings*/
+  /* flex child element settings */
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between; }
 
 .header {
+  /* box */
   box-sizing: border-box;
-  height: 120vh;
-  color: black;
-  padding: 8em 4em;
   flex-grow: 1;
-  text-align: right;
+  padding: 12.8rem 6.4rem;
+  height: 120vh;
+  /* background */
   background-image: url(../img/landscape.jpg);
   background-position: 700px 0;
   background-size: cover;
-  /* flex child element settings*/
+  /* text */
+  color: black;
+  text-align: right;
+  /* flex child element settings */
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between; }
 
 .home-body {
+  /* box */
   box-sizing: border-box;
-  padding: 2em;
+  flex-basis: 50%;
   flex-grow: 1;
-  flex-basis: 50%; }
+  padding: 3.2rem; }
 
 .header-main {
+  /* box */
   display: block;
   flex-grow: 0; }
   .header-main .profile-pic {
-    width: 100px;
+    /* box */
+    border-radius: 50%;
     height: 100px;
-    border-radius: 50%; }
+    width: 100px; }
 
 .footer {
+  /* box */
   display: block;
   flex-grow: 0;
-  font-size: .8em; }
+  font-size: .8em;
+  position: relative; }
+  .footer .link-text {
+    /* box */
+    display: none; }
+  .footer a:hover + .link-text {
+    /* box */
+    display: block;
+    /* text */
+    font-size: 2rem; }
+  .footer a:active + .link-text {
+    /* box */
+    display: block;
+    /* text */
+    font-size: 2rem; }
+  .footer a {
+    /* text */
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 3em; }
+
+.paragraph-bold {
+  /* text */
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 2em;
+  letter-spacing: .1em; }
 
 .headline {
+  /* text */
   font-size: 1em; }
 
 .body-container {
+  /* box */
   height: 105vh;
+  /* effects */
   overflow: scroll; }
   .body-container .section {
-    height: 400px;
+    /* box */
     border-bottom: solid 2px #ccc; }
+    .body-container .section img {
+      /* box */
+      max-width: 100%;
+      height: auto;
+      /* effects */
+      overflow: hidden; }
+    .body-container .section .pause-img {
+      /* text */
+      font-size: 80px;
+      text-align: center; }
+    .body-container .section .gif {
+      /* box*/
+      display: none; }
