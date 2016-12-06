@@ -1,30 +1,24 @@
-function PlayGif() {
-	this.containerEls = document.getElementsByClassName("gif-container");
+function GifPlayer(el) {
+	this.el = el;
 	this.isPlaying = false;
 
-	// add event listener to all gif conatiners
-	this._addEventListener(this.containerEls, this._changeVisibleEl);
+	this.el.addEventListener("click", this._changeVisibleEl.bind(this));
 }
 
-PlayGif.prototype = {
-	_addEventListener: function (els, fn) {
-		for (var i = 0; i < els.length; i++) {
-			var el = els[i];
-			el.addEventListener("click", function (e) {
-				fn(e, el);
-			}.bind(el));
-		};
-	},
-	_changeVisibleEl: function (e, activeContainer) {
-		var gifEl = activeContainer.getElementsByClassName("gif")[0];
-		var pauseEl = activeContainer.getElementsByClassName("pause-img")[0];
+GifPlayer.prototype = {
+	_changeVisibleEl: function () {
+		var gifEl = this.el.getElementsByClassName("gif")[0];
+		var pauseEl = this.el.getElementsByClassName("pause-img")[0];
+		var showEl = null;
+		var hideEl = null;
+		
 		if (!this.isPlaying) {
-			var showEl = gifEl;
-			var hideEl = pauseEl;
+			showEl = gifEl;
+			hideEl = pauseEl;
 			this.isPlaying = true;
 		} else {
-			var showEl = pauseEl;
-			var hideEl = gifEl;
+			showEl = pauseEl;
+			hideEl = gifEl;
 			this.isPlaying = false;
 		}
 
@@ -33,4 +27,12 @@ PlayGif.prototype = {
 	}
 }
 
-var playGif = new PlayGif();
+function makeGifPalyers() {
+	var containerEls = document.getElementsByClassName("gif-container");
+	for (var i = 0; i < containerEls.length; i++) {
+		var el = containerEls[i];
+		return new GifPlayer(el);
+	};
+}
+
+makeGifPalyers();
