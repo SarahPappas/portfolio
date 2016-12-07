@@ -184,10 +184,40 @@ h3 {
 				padding: 0 2rem;
 				padding-top: 2rem; 
 
-				p {
+				.project-item {
+					/* box */
 					padding-bottom: 2rem;
 				}
+
+				a {
+					text-decoration: none;
+					color: $text-color;
+				}
+
+				a:visited {
+					text-decoration: none;
+					color: $text-color;	
+				}
+
+				.project-buttons {
+					/* box */
+					display: flex;
+					/* flex children */
+					flex-direction: row;
+					justify-content: space-around;
+					align-items: center;
+				}
+
+				.project-button {
+					/* box */
+					width: 20rem;
+					height: 3rem;
+					border: dotted 2px $text-color;
+					/* text */
+					text-align: center;
+				}
 			}
+
 		}
 
 

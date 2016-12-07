@@ -139,8 +139,29 @@ h3 {
         border: solid 2px #ccc;
         padding: 0 2rem;
         padding-top: 2rem; }
-        .body-container .section .project .project-description p {
+        .body-container .section .project .project-description .project-item {
+          /* box */
           padding-bottom: 2rem; }
+        .body-container .section .project .project-description a {
+          text-decoration: none;
+          color: #333; }
+        .body-container .section .project .project-description a:visited {
+          text-decoration: none;
+          color: #333; }
+        .body-container .section .project .project-description .project-buttons {
+          /* box */
+          display: flex;
+          /* flex children */
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center; }
+        .body-container .section .project .project-description .project-button {
+          /* box */
+          width: 20rem;
+          height: 3rem;
+          border: dotted 2px #333;
+          /* text */
+          text-align: center; }
 
 .hidden {
   display: none; }
