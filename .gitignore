@@ -6,6 +6,11 @@
 *.pdf
 *.jpg
 *.jpeg
+*.ttf
+*.png
+*.eot
+*.woff
+*.otf
 
 # Created by https://www.gitignore.io/api/node,osx,linux
 

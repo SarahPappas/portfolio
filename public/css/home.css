@@ -1,87 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+/*@font-face { font-family: Delicious; src: url('../fonts/Delicious-Roman.otf'); } 
+*/
+/*@font-face { font-family: Infinity; src: url('../fonts/Infinity.ttf'); } */
 html {
   /* text */
   font-size: 10px; }
 
 body {
-  /* box */
-  height: 100%;
-  width: 100%;
-  margin: 0;
+  /* background */
+  background-color: #f7f7f7;
   /* text */
+  color: #333;
   font-family: "Lato", sans-serif;
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.62; }
 
-.site-container {
-  /* box */
-  height: 100%;
-  width: 100%;
-  /* flex child element settings */
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between; }
+h1 {
+  /* text */
+  text-transform: uppercase;
+  letter-spacing: 1.5em;
+  line-height: 2; }
 
-.header {
+/*.first-name {
+	font-size: 4.78rem;
+}*/
+h2 {
+  text-transform: uppercase;
+  font-weight: 300; }
+
+h3 {
+  font-weight: 300; }
+
+.sidebar {
   /* box */
+  position: fixed;
+  left: 0px;
   box-sizing: border-box;
   flex-grow: 1;
-  padding: 12.8rem 6.4rem;
-  height: 120vh;
+  height: 100%;
+  width: 20%;
   /* background */
-  background-image: url(../img/landscape.jpg);
+  background-color: #333;
   background-position: 700px 0;
   background-size: cover;
   /* text */
-  color: black;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: .1em;
   /* flex child element settings */
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
+
+.sidebar-main {
+  /* box */
+  display: block;
+  flex-grow: 0;
+  padding: 4rem 2rem; }
+  .sidebar-main .profile-pic {
+    /* box */
+    border-radius: 50%;
+    height: 100px;
+    width: 100px; }
+
+.nav-buttons {
+  /* box */
+  display: block;
+  flex-grow: 0;
+  position: relative; }
+  .nav-buttons .nav-button {
+    padding-bottom: 2.7rem; }
+    .nav-buttons .nav-button .link-text {
+      padding-top: 0.7rem;
+      /* text */
+      color: #f7f7f7;
+      font-size: 1.8rem;
+      line-height: 1rem;
+      text-align: center; }
+    .nav-buttons .nav-button .fa {
+      /*box*/
+      display: block;
+      /* text */
+      font-size: 8rem; }
+    .nav-buttons .nav-button a {
+      /* text */
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 6rem; }
 
 .home-body {
   /* box */
   box-sizing: border-box;
   flex-basis: 60%;
   flex-grow: 1;
-  padding: 3.2rem; }
-
-.header-main {
-  /* box */
-  display: block;
-  flex-grow: 0; }
-  .header-main .profile-pic {
-    /* box */
-    border-radius: 50%;
-    height: 100px;
-    width: 100px; }
-
-.footer {
-  /* box */
-  display: block;
-  flex-grow: 0;
-  font-size: 1.2rem;
-  position: relative; }
-  .footer .link-text {
-    /* box */
-    display: none; }
-  .footer a:hover + .link-text {
-    /* box */
-    display: block;
-    /* text */
-    font-size: 2rem; }
-  .footer a:active + .link-text {
-    /* box */
-    display: block;
-    /* text */
-    font-size: 2rem; }
-  .footer a {
-    /* text */
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 6rem; }
+  margin-left: 20%; }
 
 .quote {
   /* text */
@@ -96,24 +115,32 @@ body {
 
 .body-container {
   /* box */
-  height: 105vh;
+  height: 100%;
   /* effects */
   overflow: scroll; }
   .body-container .section {
     /* box */
     border-bottom: solid 2px #ccc;
     max-width: 70rem;
-    margin: 0 auto; }
-    .body-container .section img {
+    margin: 0 auto;
+    padding: 4rem 2rem; }
+    .body-container .section .project {
       /* box */
-      max-width: 100%;
-      height: auto;
-      /* effects */
-      overflow: hidden; }
-    .body-container .section .pause-img {
-      /* text */
-      font-size: 80px;
-      text-align: center; }
+      margin-top: 4rem; }
+      .body-container .section .project img {
+        /* box */
+        display: block;
+        height: auto;
+        max-width: 100%;
+        /* effects */
+        overflow: hidden; }
+      .body-container .section .project .project-description {
+        /* box */
+        border: solid 2px #ccc;
+        padding: 0 2rem;
+        padding-top: 2rem; }
+        .body-container .section .project .project-description p {
+          padding-bottom: 2rem; }
 
 .hidden {
   display: none; }
