@@ -90,6 +90,9 @@ h3 {
       display: block;
       /* text */
       font-size: 8rem; }
+    .nav-buttons .nav-button .not-square {
+      padding-bottom: 0.85rem;
+      font-size: 7rem; }
     .nav-buttons .nav-button a {
       /* text */
       color: rgba(255, 255, 255, 0.5);
@@ -151,6 +154,8 @@ h3 {
         .body-container .section .project .project-description .project-buttons {
           /* box */
           display: flex;
+          /* text */
+          /*text-transform: uppercase;*/
           /* flex children */
           flex-direction: row;
           justify-content: space-around;
@@ -159,7 +164,7 @@ h3 {
           /* box */
           width: 20rem;
           height: 3rem;
-          border: dotted 2px #333;
+          border: solid 2px #333;
           /* text */
           text-align: center; }
 

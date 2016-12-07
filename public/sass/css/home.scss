@@ -100,7 +100,7 @@ h3 {
 	// The icon font library adds a bit of extra space on the top and bottom of 
 	// icons, which we want to take into account when we set our paddings.
 	$icon-font-offset: .3rem;
-
+	
 	.nav-button {
 		padding-bottom: 3rem - $icon-font-offset;
 
@@ -120,6 +120,11 @@ h3 {
 
 			/* text */
 			font-size: 8rem;
+		}
+
+		.not-square {
+			padding-bottom: 1rem - .15rem;
+			font-size: 7rem;
 		}
 
 		a {
@@ -202,6 +207,8 @@ h3 {
 				.project-buttons {
 					/* box */
 					display: flex;
+					/* text */
+					/*text-transform: uppercase;*/
 					/* flex children */
 					flex-direction: row;
 					justify-content: space-around;
@@ -212,7 +219,7 @@ h3 {
 					/* box */
 					width: 20rem;
 					height: 3rem;
-					border: dotted 2px $text-color;
+					border: solid 2px $text-color;
 					/* text */
 					text-align: center;
 				}
