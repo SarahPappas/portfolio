@@ -1,16 +1,16 @@
-function GifPlayer(el) {
+function GIFPlayer(el) {
 	this.el = el;
 	this.isPlaying = false;
 
 	this.el.addEventListener("click", this._changeVisibleEl.bind(this));
 }
 
-GifPlayer.prototype = {
+GIFPlayer.prototype = {
 	_changeVisibleEl: function () {
-		var gifEl = this.el.getElementsByClassName("gif")[0];
-		var pauseEl = this.el.getElementsByClassName("pause-img")[0];
-		var showEl = null;
-		var hideEl = null;
+		var gifEl = this.el.getElementsByClassName("js-gif")[0],
+			pauseEl = this.el.getElementsByClassName("js-pause-img")[0],
+			showEl = null,
+			hideEl = null;
 		
 		if (!this.isPlaying) {
 			showEl = gifEl;
@@ -22,17 +22,17 @@ GifPlayer.prototype = {
 			this.isPlaying = false;
 		}
 
-		hideEl.style.display = "none";
-		showEl.style.display = "block";	
+		hideEl.classList.add("hidden");
+		showEl.classList.remove("hidden");
 	}
 }
 
-function makeGifPalyers() {
+function makeGIFPlayers() {
 	var containerEls = document.getElementsByClassName("gif-container");
 	for (var i = 0; i < containerEls.length; i++) {
 		var el = containerEls[i];
-		return new GifPlayer(el);
-	};
+		return new GIFPlayer(el);
+	}
 }
 
-makeGifPalyers();
+makeGIFPlayers();
