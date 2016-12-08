@@ -1,13 +1,8 @@
-/*$accent-color: #6665ff;*/
-/*$accent-color: #fe5c66;*/
 * {
   margin: 0;
   padding: 0;
   text-decoration: none; }
 
-/*@font-face { font-family: Delicious; src: url('../fonts/Delicious-Roman.otf'); } 
-*/
-/*@font-face { font-family: Infinity; src: url('../fonts/Infinity.ttf'); } */
 html {
   /* text */
   font-size: 10px; }
@@ -171,11 +166,13 @@ h3 {
           /* box */
           padding-bottom: 2rem; }
         .body-container .section .project .project-description a {
-          text-decoration: none;
-          color: #333; }
+          /* text */
+          color: #333;
+          text-decoration: none; }
         .body-container .section .project .project-description a:visited {
-          text-decoration: none;
-          color: #333; }
+          /* text */
+          color: #333;
+          text-decoration: none; }
         .body-container .section .project .project-description .project-buttons {
           /* box */
           display: flex;

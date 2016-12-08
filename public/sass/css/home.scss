@@ -3,18 +3,13 @@ $icon-color: rgba(255, 255, 255, .5);
 $body-font-size: 2.0rem;
 $font-sidebar: 'Lato', sans-serif;
 $padding: 4rem 2rem;
-/*$accent-color: #6665ff;*/
 $accent-color: #fe7b5c;
-/*$accent-color: #fe5c66;*/
 
 * {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
 }
-
-/*@font-face { font-family: Delicious; src: url('../fonts/Delicious-Roman.otf'); } 
-*//*@font-face { font-family: Infinity; src: url('../fonts/Infinity.ttf'); } */
 
 html {
 	/* text */
@@ -24,6 +19,7 @@ html {
 body {
 	/* background */
 	background-color: rgb(97%, 97%, 97%);
+
 	/* text */
 	color: $text-color;
 	font-family: $font-sidebar;
@@ -169,6 +165,7 @@ h3 {
 	.subtitle {
 		/* box */
 		padding-top: 2rem;
+
 		/* text */
 		color: $accent-color;
 	}
@@ -205,10 +202,12 @@ h3 {
 					padding: 2rem;
 					margin: 0 auto;
 					width: 100%;
+
 					/* background */
 					background-color: $icon-color;
 					position: absolute;
 					top: 0;
+
 					/* text */
 					font-size: 1.6rem;
 					font-weight: 300;
@@ -229,21 +228,25 @@ h3 {
 				}
 
 				a {
-					text-decoration: none;
+					/* text */
 					color: $text-color;
+					text-decoration: none;
 				}
 
 				a:visited {
-					text-decoration: none;
+					/* text */
 					color: $text-color;	
+					text-decoration: none;
 				}
 
 				.project-buttons {
 					/* box */
 					display: flex;
+
 					/* text */
 					text-transform: uppercase;
 					font-size: 1.6rem;
+
 					/* flex children */
 					flex-direction: row;
 					justify-content: space-around;
@@ -254,8 +257,10 @@ h3 {
 					/* box */
 					width: 20rem;
 					height: 4rem;
+
 					/* background */
 					background-color: $accent-color;
+
 					/* text */
 					text-align: center;
 					white-space: nowrap;
