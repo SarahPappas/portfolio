@@ -50,6 +50,7 @@ h3 {
   flex-grow: 1;
   height: 100%;
   width: 20%;
+  margin: auto;
   /* background */
   background-color: #333;
   background-position: 700px 0;
@@ -71,8 +72,7 @@ h3 {
   /* box */
   display: block;
   flex-grow: 0;
-  padding: 4rem 2rem;
-  margin: auto; }
+  padding: 4rem 2rem; }
   .sidebar-main .profile-pic {
     /* box */
     border-radius: 50%;
@@ -90,17 +90,17 @@ h3 {
       padding-top: 0.7rem;
       /* text */
       color: #f7f7f7;
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       line-height: 1rem;
       text-align: center; }
     .nav-buttons .nav-button .fa {
       /*box*/
       display: block;
       /* text */
-      font-size: 8rem; }
+      font-size: 7rem; }
     .nav-buttons .nav-button .not-square {
       padding-bottom: 0.85rem;
-      font-size: 7rem; }
+      font-size: 6rem; }
     .nav-buttons .nav-button a {
       /* text */
       color: rgba(255, 255, 255, 0.5);
@@ -154,12 +154,10 @@ h3 {
           margin: 0 auto;
           width: 100%;
           /* background */
-          /*background: rgba(0, 0, 0, 0.75);*/
           background-color: rgba(255, 255, 255, 0.5);
           position: absolute;
           top: 0;
           /* text */
-          /*color: #fff; */
           font-size: 1.6rem;
           font-weight: 300;
           text-transform: uppercase; }
@@ -191,12 +189,15 @@ h3 {
         .body-container .section .project .project-description .project-button {
           /* box */
           width: 20rem;
-          height: 3rem;
-          /*border-radius: .5rem;*/
+          height: 4rem;
           /* background */
           background-color: #fe7b5c;
           /* text */
-          text-align: center; }
+          text-align: center;
+          white-space: nowrap; }
+          .body-container .section .project .project-description .project-button a {
+            position: relative;
+            top: .6rem; }
 
 .hidden {
   display: none; }
