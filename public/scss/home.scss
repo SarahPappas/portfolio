@@ -1,4 +1,6 @@
 @import "constants";
+@import "sidebar";
+@import "navbuttons";
 
 * {
 	margin: 0;
@@ -54,92 +56,7 @@ h3 {
 	letter-spacing: .1em;
 }
 
-.sidebar {
-	/* box */
-	box-sizing: border-box;
-	flex-grow: 1;
-	height: 100%;
-	width: 20%;
-	margin: auto;
 
-
-	/* background */
-	background-color: #333;
-	background-position: 700px 0;
-	background-size: cover;
-	position: fixed;
-	left: 0px;
-	overflow: scroll;
-
-	/* text */
-	color: rgb(97%, 97%, 97%);
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: .1em;
-
-	/* flex child element settings */
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-}
-
-.sidebar-main {
-	/* box */
-	display: block;
-	flex-grow: 0;
-	padding: $padding;
-
-	.profile-pic {
-		/* box */
-		border-radius: 50%;
-		height: 100px;
-		width: 100px;
-	}
-}
-
-.nav-buttons {
-	/* box */
-	display: block;
-	flex-grow: 0;
-	position: relative;
-
-	// The icon font library adds a bit of extra space on the top and bottom of 
-	// icons, which we want to take into account when we set our paddings.
-	$icon-font-offset: .3rem;
-	
-	.nav-button {
-		padding-bottom: 3rem - $icon-font-offset;
-
-		.link-text {
-			padding-top: 1rem - $icon-font-offset;
-
-			/* text */
-			color: rgb(97%, 97%, 97%);
-			font-size: 1.6rem;
-			line-height: 1rem;
-			text-align: center;
-		}
-
-		.fa {
-			/*box*/
-			display: block;
-
-			/* text */
-			font-size: 7rem;
-		}
-
-		.not-square {
-			padding-bottom: 1rem - .15rem;
-			font-size: 6rem;
-		}
-
-		a {
-			/* text */
-			color: rgba(255, 255, 255, .5);
-			font-size: 6rem;
-		}
-	}
-}
 
 .home-body {
 	/* box */
@@ -274,7 +191,13 @@ h3 {
 		}
 	}
 }
-
-.hidden {
-	display: none;
+.contact_label {
+	/* box */
+	display: inline-block;
+}
+.email {
+	/* box */
+	display: inline-block;
+	width: 24rem;
+	vertical-align: text-bottom;
 }

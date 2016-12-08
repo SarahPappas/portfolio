@@ -10,33 +10,33 @@
 <body>
 	<div class="site-container">
 		<div class="sidebar">
-			<div class="sidebar-main">
-				<img class="profile-pic" src="img/Sarah_Pappas_profile.jpg"></img>
-				<div class="headline">Sarah Pappas</div>
+			<div class="sidebar__profile-container">
+				<img class="sidebar__profile-pic" src="img/Sarah_Pappas_profile.jpg"></img>
+				<p>Sarah Pappas</p>
 			</div>
 			<div class="nav-buttons">
-				<div class="nav-button">
+				<div class="nav-buttons__button">
 					<a href="https://github.com/sarahpappas" target="_blank">
 						<i class="fa fa-github-square"></i>
-						<p class="link-text">GitHub</p>
+						<p class="nav-buttons__link-text">GitHub</p>
 					</a>
 				</div>
-				<div class="nav-button">
+				<div class="nav-buttons__button">
 					<a href="https://www.linkedin.com/in/sarahepappas" target="_blank">
 						<i class="fa fa-linkedin-square" target="_blank"></i>
-						<p class="link-text" target="_blank">LinkedIn</p>
+						<p class="nav-buttons__link-text" target="_blank">LinkedIn</p>
 					</a>
 				</div>
-				<div class="nav-button">
+				<div class="nav-buttons__button">
 					<a href="#get-in-touch">
 						<i class="fa fa-envelope-square"></i>
-						<p class="link-text">Email</p>
+						<p class="nav-buttons__link-text">Email</p>
 					</a>
 				</div>
-				<div class="nav-button">
+				<div class="nav-buttons__bu">
 					<a href="PappasSarahResume.pdf" target="_blank">
-						<i class="fa fa-file-pdf-o not-square"></i>
-						<p class="link-text">Resume</p>
+						<i class="fa fa-file-pdf-o nav-buttons__not-square"></i>
+						<p class="nav-buttons__link-text">Resume</p>
 					</a>
 				</div>
 			</div>
@@ -50,7 +50,7 @@
 				</section>
 				<section class="section">
 					<h2>About Me</h2>
-					<p>I am a practical developer who sees the big picture. I am thorough and enjoy exploring alternative solutions to produce a result I can be proud of. I thrive on constructive criticism, and I'm determined to learn something new every day.</p>
+					<p>I am a fullstack developer that loves Node.js, flexbox, and chocolate chip cookies.</p>
 				</section>
 				<section class="section">
 					<h2 class="h2-padding-exception">Personal Projects</h2>
@@ -91,15 +91,14 @@
 								</div>
 							</div>
 							<p class="project-item">Technologies: Rails, JavaScript, Riot.js</p>
-							<p class= "project-item">Built a fan theories website with a Rails api and Riot.js. On the site anyone can post a theory, view theories, or vote on a theory. Voting is restricted per theory based in the the user's IP address. </p>
+							<p class= "project-item">Show Theories is a fan theories site built on Rails api and Riot.js. Visitors can add theories about their favorite show, browse theories, and vote on theories. Voting (once per theory) is restricted based in the the user's IP address.</p>
 						</div>
 					</div>
 				</section>
 				<section id="get-in-touch" class="section">
 					<h2>Get In Touch</h2>
-					<div>
-						<p>Email: pappas.sarah@gmail.com</p>
-					</div>
+					<p class="contact_label">Email:</p>
+					<img src="img/email.svg" class="email">
 				</section>
 			</div>
 		</div>

@@ -1,0 +1,44 @@
+.nav-buttons {
+	/* box */
+	display: block;
+	flex-grow: 0;
+	position: relative;
+
+	// The icon font library adds a bit of extra space on the top and bottom of 
+	// icons, which we want to take into account when we set our paddings.
+	$icon-font-offset: .3rem;
+	
+	&__button {
+		padding-bottom: 3rem - $icon-font-offset;
+
+	}
+
+	&__link-text {
+		padding-top: 1rem - $icon-font-offset;
+
+		/* text */
+		color: rgb(97%, 97%, 97%);
+		font-size: 1.6rem;
+		line-height: 1rem;
+		text-align: center;
+	}
+
+	.fa {
+		/*box*/
+		display: block;
+
+		/* text */
+		font-size: 7rem;
+	}
+
+	&__not-square {
+		padding-bottom: 1rem - .15rem;
+		font-size: 6rem;
+	}
+
+	a {
+		/* text */
+		color: rgba(255, 255, 255, .5);
+		font-size: 6rem;
+	}
+}

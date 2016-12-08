@@ -1,0 +1,44 @@
+.sidebar {
+	/* box */
+	box-sizing: border-box;
+	flex-grow: 1;
+	height: 100%;
+	width: 20%;
+	margin: auto;
+
+
+	/* background */
+	background-color: #333;
+	background-position: 700px 0;
+	background-size: cover;
+	position: fixed;
+	left: 0px;
+	overflow: scroll;
+
+	/* text */
+	color: rgb(97%, 97%, 97%);
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .1em;
+
+	/* flex child element settings */
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	
+	&__profile-container {
+		/* box */
+		display: block;
+		flex-grow: 0;
+		padding: $padding;
+
+	}
+
+	&__profile-pic {
+		/* box */
+		border-radius: 50%;
+		height: 100px;
+		width: 100px;
+	}
+
+}
