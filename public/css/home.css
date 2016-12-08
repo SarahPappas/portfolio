@@ -1,5 +1,5 @@
 /*$accent-color: #6665ff;*/
-/*$accent-color: #fe7b5c;*/
+/*$accent-color: #fe5c66;*/
 * {
   margin: 0;
   padding: 0;
@@ -29,20 +29,23 @@ h1 {
   line-height: 2;
   font-size: 4rem; }
 
-/*.first-name {
-	font-size: 4.78rem;
-}*/
 h2 {
+  /* text */
   text-transform: uppercase;
-  font-weight: 300; }
+  font-weight: 300;
+  letter-spacing: .1em;
+  padding-bottom: 4rem; }
+
+.h2-padding-exception {
+  padding-bottom: 0; }
 
 h3 {
-  font-weight: 300; }
+  /* text */
+  font-weight: 300;
+  letter-spacing: .1em; }
 
 .sidebar {
   /* box */
-  position: fixed;
-  left: 0px;
   box-sizing: border-box;
   flex-grow: 1;
   height: 100%;
@@ -51,6 +54,9 @@ h3 {
   background-color: #333;
   background-position: 700px 0;
   background-size: cover;
+  position: fixed;
+  left: 0px;
+  overflow: scroll;
   /* text */
   color: #f7f7f7;
   text-transform: uppercase;
@@ -59,15 +65,14 @@ h3 {
   /* flex child element settings */
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center; }
+  flex-wrap: nowrap; }
 
 .sidebar-main {
   /* box */
   display: block;
   flex-grow: 0;
-  padding: 4rem 2rem; }
+  padding: 4rem 2rem;
+  margin: auto; }
   .sidebar-main .profile-pic {
     /* box */
     border-radius: 50%;
@@ -118,8 +123,10 @@ h3 {
   /* effects */
   overflow: scroll; }
   .body-container .subtitle {
+    /* box */
+    padding-top: 2rem;
     /* text */
-    color: #fe5c66; }
+    color: #fe7b5c; }
   .body-container .section {
     /* box */
     border-bottom: solid 2px #ccc;
@@ -187,7 +194,7 @@ h3 {
           height: 3rem;
           /*border-radius: .5rem;*/
           /* background */
-          background-color: #fe5c66;
+          background-color: #fe7b5c;
           /* text */
           text-align: center; }
 

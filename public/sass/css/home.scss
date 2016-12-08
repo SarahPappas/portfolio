@@ -4,8 +4,8 @@ $body-font-size: 2.0rem;
 $font-sidebar: 'Lato', sans-serif;
 $padding: 4rem 2rem;
 /*$accent-color: #6665ff;*/
-/*$accent-color: #fe7b5c;*/
-$accent-color: #fe5c66;
+$accent-color: #fe7b5c;
+/*$accent-color: #fe5c66;*/
 
 * {
 	margin: 0;
@@ -40,23 +40,26 @@ h1 {
 	font-size: 4rem;
 }
 
-/*.first-name {
-	font-size: 4.78rem;
-}*/
-
 h2 {
+	/* text */
 	text-transform: uppercase;
 	font-weight: 300;
+	letter-spacing: .1em;
+	padding-bottom: 4rem;
+}
+
+.h2-padding-exception {
+	padding-bottom: 0;
 }
 
 h3 {
+	/* text */
 	font-weight: 300;
+	letter-spacing: .1em;
 }
 
 .sidebar {
 	/* box */
-	position: fixed;
-	left: 0px;
 	box-sizing: border-box;
 	flex-grow: 1;
 	height: 100%;
@@ -66,6 +69,9 @@ h3 {
 	background-color: #333;
 	background-position: 700px 0;
 	background-size: cover;
+	position: fixed;
+	left: 0px;
+	overflow: scroll;
 
 	/* text */
 	color: rgb(97%, 97%, 97%);
@@ -77,8 +83,6 @@ h3 {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	align-items: center;
-	justify-content: center;
 }
 
 .sidebar-main {
@@ -86,6 +90,7 @@ h3 {
 	display: block;
 	flex-grow: 0;
 	padding: $padding;
+	margin: auto;
 
 	.profile-pic {
 		/* box */
@@ -161,6 +166,8 @@ h3 {
 	overflow: scroll;
 
 	.subtitle {
+		/* box */
+		padding-top: 2rem;
 		/* text */
 		color: $accent-color;
 	}
