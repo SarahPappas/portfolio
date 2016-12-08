@@ -1,9 +1,4 @@
-$text-color: #333;
-$icon-color: rgba(255, 255, 255, .5);
-$body-font-size: 2.0rem;
-$font-sidebar: 'Lato', sans-serif;
-$padding: 4rem 2rem;
-$accent-color: #fe7b5c;
+@import "constants";
 
 * {
 	margin: 0;
@@ -14,6 +9,11 @@ $accent-color: #fe7b5c;
 html {
 	/* text */
 	font-size: 10px;
+
+	@media (max-width: 320px) {
+		/* text */
+		font-size: 8px;
+	}
 }
 
 body {

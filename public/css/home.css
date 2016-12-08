@@ -6,6 +6,10 @@
 html {
   /* text */
   font-size: 10px; }
+  @media (max-width: 320px) {
+    html {
+      /* text */
+      font-size: 8px; } }
 
 body {
   /* background */

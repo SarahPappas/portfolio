@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "node-sass": "./node_modules/.bin/node-sass",
-    "sass": "node-sass -w public/sass/css -o public/css/"
+    "sass": "node-sass -w public/scss -o public/css/",
+    "start": "python -m SimpleHTTPServer 8000 public"
   },
   "author": "",
   "license": "ISC",
