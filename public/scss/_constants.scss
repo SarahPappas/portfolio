@@ -4,3 +4,7 @@ $body-font-size: 2.0rem;
 $font-sidebar: 'Lato', sans-serif;
 $padding: 4rem 2rem;
 $accent-color: #fe7b5c;
+
+// media queries
+$phone-large: "(max-width: 768px)";
+$phone-small: "(max-width: 320px)";

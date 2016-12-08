@@ -1,0 +1,95 @@
+.project {
+	/* box */
+	margin-top: 4rem;
+
+	img {
+		/* box */
+		display: block;
+		height: auto;
+		max-width: 100%;
+
+		/* effects */
+		overflow: hidden;
+	}
+
+	&__img {
+		/* background */
+		position: relative;
+	}
+
+	&__img-title {
+		/* box */
+		box-sizing: border-box;
+		display: block;
+		padding: 2rem;
+		margin: 0 auto;
+		width: 100%;
+
+		/* background */
+		background-color: $icon-color;
+		position: absolute;
+		top: 0;
+
+		/* text */
+		font-size: 1.6rem;
+		font-weight: 300;
+		text-transform: uppercase;
+	}
+
+	&__description {
+		/* box */
+		border: solid 2px #ccc;
+		border-top: none;
+		padding: 0 2rem;
+		padding-top: 2rem; 
+
+		a {
+			/* text */
+			color: $text-color;
+			text-decoration: none;
+		}
+
+		a:visited {
+			/* text */
+			color: $text-color;	
+			text-decoration: none;
+		}
+	}
+
+	&__item {
+		/* box */
+		padding-bottom: 2rem;
+	}
+
+	&__buttons {
+		/* box */
+		display: flex;
+
+		/* text */
+		text-transform: uppercase;
+		font-size: 1.6rem;
+
+		/* flex children */
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	&__button {
+		/* box */
+		width: 20rem;
+		height: 4rem;
+
+		/* background */
+		background-color: $accent-color;
+
+		/* text */
+		text-align: center;
+		white-space: nowrap;
+
+		a {
+			position: relative;
+			top: .6rem;
+		}
+	}
+}

@@ -1,0 +1,43 @@
+.main {
+	/* box */
+	box-sizing: border-box;
+	flex-basis: 60%;
+	flex-grow: 1;
+	margin-left: 20%;
+	
+	&__container {
+		/* box */
+		height: 100%;
+
+		/* effects */
+		overflow: scroll;
+	}
+	
+	&__subtitle {
+		/* box */
+		padding-top: 2rem;
+
+		/* text */
+		color: $accent-color;
+	}
+
+	&__section {
+		/* box */
+		border-bottom: solid 2px #ccc;
+		max-width: 70rem;
+		margin: 0 auto;
+		padding: $padding;
+	}
+
+	&__label {
+		/* box */
+		display: inline-block;
+	}
+	
+	&__email {
+		/* box */
+		display: inline-block;
+		width: 24rem;
+		vertical-align: text-bottom;
+	}
+}

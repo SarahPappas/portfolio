@@ -1,3 +1,30 @@
+.nav-buttons {
+  /* box */
+  display: block;
+  flex-grow: 0;
+  position: relative; }
+  .nav-buttons__button {
+    padding-bottom: 2.7rem; }
+  .nav-buttons__link-text {
+    padding-top: 0.7rem;
+    /* text */
+    color: #f7f7f7;
+    font-size: 1.6rem;
+    line-height: 1rem;
+    text-align: center; }
+  .nav-buttons .fa {
+    /*box*/
+    display: block;
+    /* text */
+    font-size: 7rem; }
+  .nav-buttons__not-square {
+    padding-bottom: 0.85rem;
+    font-size: 6rem; }
+  .nav-buttons a {
+    /* text */
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 6rem; }
+
 .sidebar {
   /* box */
   box-sizing: border-box;
@@ -32,32 +59,104 @@
     height: 100px;
     width: 100px; }
 
-.nav-buttons {
+.main {
   /* box */
-  display: block;
-  flex-grow: 0;
-  position: relative; }
-  .nav-buttons__button {
-    padding-bottom: 2.7rem; }
-  .nav-buttons__link-text {
-    padding-top: 0.7rem;
+  box-sizing: border-box;
+  flex-basis: 60%;
+  flex-grow: 1;
+  margin-left: 20%; }
+  .main__container {
+    /* box */
+    height: 100%;
+    /* effects */
+    overflow: scroll; }
+  .main__subtitle {
+    /* box */
+    padding-top: 2rem;
     /* text */
-    color: #f7f7f7;
-    font-size: 1.6rem;
-    line-height: 1rem;
-    text-align: center; }
-  .nav-buttons .fa {
-    /*box*/
+    color: #fe7b5c; }
+  .main__section {
+    /* box */
+    border-bottom: solid 2px #ccc;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 4rem 2rem; }
+  .main__label {
+    /* box */
+    display: inline-block; }
+  .main__email {
+    /* box */
+    display: inline-block;
+    width: 24rem;
+    vertical-align: text-bottom; }
+
+.project {
+  /* box */
+  margin-top: 4rem; }
+  .project img {
+    /* box */
     display: block;
+    height: auto;
+    max-width: 100%;
+    /* effects */
+    overflow: hidden; }
+  .project__img {
+    /* background */
+    position: relative; }
+  .project__img-title {
+    /* box */
+    box-sizing: border-box;
+    display: block;
+    padding: 2rem;
+    margin: 0 auto;
+    width: 100%;
+    /* background */
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
     /* text */
-    font-size: 7rem; }
-  .nav-buttons__not-square {
-    padding-bottom: 0.85rem;
-    font-size: 6rem; }
-  .nav-buttons a {
+    font-size: 1.6rem;
+    font-weight: 300;
+    text-transform: uppercase; }
+  .project__description {
+    /* box */
+    border: solid 2px #ccc;
+    border-top: none;
+    padding: 0 2rem;
+    padding-top: 2rem; }
+    .project__description a {
+      /* text */
+      color: #333;
+      text-decoration: none; }
+    .project__description a:visited {
+      /* text */
+      color: #333;
+      text-decoration: none; }
+  .project__item {
+    /* box */
+    padding-bottom: 2rem; }
+  .project__buttons {
+    /* box */
+    display: flex;
     /* text */
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 6rem; }
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    /* flex children */
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  .project__button {
+    /* box */
+    width: 20rem;
+    height: 4rem;
+    /* background */
+    background-color: #fe7b5c;
+    /* text */
+    text-align: center;
+    white-space: nowrap; }
+    .project__button a {
+      position: relative;
+      top: .6rem; }
 
 * {
   margin: 0;
@@ -103,108 +202,3 @@ h3 {
   /* text */
   font-weight: 300;
   letter-spacing: .1em; }
-
-.home-body {
-  /* box */
-  box-sizing: border-box;
-  flex-basis: 60%;
-  flex-grow: 1;
-  margin-left: 20%; }
-
-.headline {
-  /* text */
-  font-size: 1em; }
-
-.body-container {
-  /* box */
-  height: 100%;
-  /* effects */
-  overflow: scroll; }
-  .body-container .subtitle {
-    /* box */
-    padding-top: 2rem;
-    /* text */
-    color: #fe7b5c; }
-  .body-container .section {
-    /* box */
-    border-bottom: solid 2px #ccc;
-    max-width: 70rem;
-    margin: 0 auto;
-    padding: 4rem 2rem; }
-    .body-container .section .project {
-      /* box */
-      margin-top: 4rem; }
-      .body-container .section .project img {
-        /* box */
-        display: block;
-        height: auto;
-        max-width: 100%;
-        /* effects */
-        overflow: hidden; }
-      .body-container .section .project .img {
-        /* background */
-        position: relative; }
-        .body-container .section .project .img .img-title {
-          /* box */
-          box-sizing: border-box;
-          display: block;
-          padding: 2rem;
-          margin: 0 auto;
-          width: 100%;
-          /* background */
-          background-color: rgba(255, 255, 255, 0.5);
-          position: absolute;
-          top: 0;
-          /* text */
-          font-size: 1.6rem;
-          font-weight: 300;
-          text-transform: uppercase; }
-      .body-container .section .project .project-description {
-        /* box */
-        border: solid 2px #ccc;
-        border-top: none;
-        padding: 0 2rem;
-        padding-top: 2rem; }
-        .body-container .section .project .project-description .project-item {
-          /* box */
-          padding-bottom: 2rem; }
-        .body-container .section .project .project-description a {
-          /* text */
-          color: #333;
-          text-decoration: none; }
-        .body-container .section .project .project-description a:visited {
-          /* text */
-          color: #333;
-          text-decoration: none; }
-        .body-container .section .project .project-description .project-buttons {
-          /* box */
-          display: flex;
-          /* text */
-          text-transform: uppercase;
-          font-size: 1.6rem;
-          /* flex children */
-          flex-direction: row;
-          justify-content: space-around;
-          align-items: center; }
-        .body-container .section .project .project-description .project-button {
-          /* box */
-          width: 20rem;
-          height: 4rem;
-          /* background */
-          background-color: #fe7b5c;
-          /* text */
-          text-align: center;
-          white-space: nowrap; }
-          .body-container .section .project .project-description .project-button a {
-            position: relative;
-            top: .6rem; }
-
-.contact_label {
-  /* box */
-  display: inline-block; }
-
-.email {
-  /* box */
-  display: inline-block;
-  width: 24rem;
-  vertical-align: text-bottom; }
