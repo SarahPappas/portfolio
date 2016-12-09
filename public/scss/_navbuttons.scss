@@ -7,6 +7,17 @@
 	// The icon font library adds a bit of extra space on the top and bottom of 
 	// icons, which we want to take into account when we set our paddings.
 	$icon-font-offset: .3rem;
+
+	@media #{$phone-large}  {
+		/* box */
+		display: flex;
+
+		/* flex child element settings */
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+
+	}
 	
 	&__button {
 		padding-bottom: 3rem - $icon-font-offset;
@@ -21,19 +32,34 @@
 		font-size: 1.6rem;
 		line-height: 1rem;
 		text-align: center;
+
+		@media #{$phone-large} {
+			/* text */
+			font-size: 1.3rem;
+		}
 	}
 
-	.fa {
+	&__icon {
 		/*box*/
 		display: block;
 
 		/* text */
 		font-size: 7rem;
-	}
 
-	&__not-square {
-		padding-bottom: 1rem - .15rem;
-		font-size: 6rem;
+		@media #{$phone-large} {
+			/* text */
+			font-size: 5rem;
+		}
+
+		&--not-square {
+			padding-bottom: 1rem - .15rem;
+			font-size: 6rem;
+
+			@media #{$phone-large} {
+				/* text */
+				font-size: 4rem;
+			}
+		}
 	}
 
 	a {
