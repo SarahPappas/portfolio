@@ -14,7 +14,6 @@
 
 		/* flex child element settings */
 		flex-direction: row;
-		align-items: center;
 		justify-content: space-around;
 
 	}
@@ -22,6 +21,10 @@
 	&__button {
 		padding-bottom: 3rem - $icon-font-offset;
 
+		@media #{$phone-large} {
+			/* box */
+			padding-bottom: 0
+		}
 	}
 
 	&__link-text {
@@ -58,6 +61,8 @@
 			@media #{$phone-large} {
 				/* text */
 				font-size: 4rem;
+				padding-top: .3rem;
+				padding-bottom: .7rem;
 			}
 		}
 	}

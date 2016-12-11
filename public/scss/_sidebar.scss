@@ -32,10 +32,12 @@
 		/* box */
 		height: 20%;
 		width: 100%;
+		// padding: $padding-phone-sidebar;
 
 		/* background */
 		top: 0px;
-		overflow: none;
+		overflow: hidden;
+		z-index: 1;
 
 		/* flex child element settings */
 		flex-direction: column;
@@ -50,7 +52,7 @@
 		@media #{$phone-large} {
 			/* text */
 			font-size: 3rem;
-			padding: $padding-phone-large;
+			padding: .2rem;
 		}
 	}
 

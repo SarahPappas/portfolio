@@ -9,10 +9,13 @@
       display: flex;
       /* flex child element settings */
       flex-direction: row;
-      align-items: center;
       justify-content: space-around; } }
   .nav-buttons__button {
     padding-bottom: 2.7rem; }
+    @media (max-width: 768px) {
+      .nav-buttons__button {
+        /* box */
+        padding-bottom: 0; } }
   .nav-buttons__link-text {
     padding-top: 0.7rem;
     /* text */
@@ -39,7 +42,9 @@
       @media (max-width: 768px) {
         .nav-buttons__icon--not-square {
           /* text */
-          font-size: 4rem; } }
+          font-size: 4rem;
+          padding-top: .3rem;
+          padding-bottom: .7rem; } }
   .nav-buttons a {
     /* text */
     color: rgba(255, 255, 255, 0.5);
@@ -75,7 +80,8 @@
       width: 100%;
       /* background */
       top: 0px;
-      overflow: none;
+      overflow: hidden;
+      z-index: 1;
       /* flex child element settings */
       flex-direction: column; } }
   .sidebar__profile-container {
@@ -87,7 +93,7 @@
       .sidebar__profile-container {
         /* text */
         font-size: 3rem;
-        padding: 1.5rem 1.5rem; } }
+        padding: .2rem; } }
   .sidebar__profile-pic {
     /* box */
     border-radius: 50%;
