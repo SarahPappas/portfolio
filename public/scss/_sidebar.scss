@@ -54,12 +54,12 @@
 			$letter-spacing: .75em;
 
 			/* box */
-			// margin-left: $letter-spacing /2;
+			padding-right: -$letter-spacing /2;
 
 			/* text */
 			font-size: 4rem;
 			letter-spacing: $letter-spacing;
-			text-indent: $letter-spacing /2;
+			text-indent: $letter-spacing;
 		}
 		
 	}
