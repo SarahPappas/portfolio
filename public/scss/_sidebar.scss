@@ -32,27 +32,43 @@
 		/* box */
 		height: 20%;
 		width: 100%;
-		// padding: $padding-phone-sidebar;
 
 		/* background */
+		position: static;
 		top: 0px;
 		overflow: hidden;
-		z-index: 1;
 
 		/* flex child element settings */
 		flex-direction: column;
 	}
-	
+
 	&__profile-container {
 		/* box */
 		display: block;
 		flex-grow: 0;
 		padding: $padding;
+	}
+
+	&__name {
+		@media #{$phone-large} {
+			$letter-spacing: .75em;
+
+			/* box */
+			margin-left: $letter-spacing /2;
+
+			/* text */
+			font-size: 4rem;
+			letter-spacing: $letter-spacing;
+		}
+		
+	}
+
+	&__headline {
+		display: none;
 
 		@media #{$phone-large} {
-			/* text */
-			font-size: 3rem;
-			padding: .2rem;
+			/* box */
+			display: block;
 		}
 	}
 
