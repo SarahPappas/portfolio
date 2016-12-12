@@ -4,6 +4,11 @@
 	flex-basis: 60%;
 	flex-grow: 1;
 	margin-left: 20%;
+	padding: 0 2rem;
+
+	@media #{$phone-large} {
+		margin-left: 0;
+	}
 	
 	&__container {
 		/* box */
@@ -27,6 +32,13 @@
 		max-width: 70rem;
 		margin: 0 auto;
 		padding: $padding;
+	}
+
+	&__profile {
+		@media #{$phone-large} {
+			/* box */
+			display: none;
+		}
 	}
 
 	&__label {

@@ -7,6 +7,7 @@
     .nav-buttons {
       /* box */
       display: flex;
+      padding-bottom: 4rem;
       /* flex child element settings */
       flex-direction: row;
       justify-content: space-around; } }
@@ -92,10 +93,10 @@
   @media (max-width: 768px) {
     .sidebar__name {
       /* box */
-      margin-left: 0.375em;
       /* text */
       font-size: 4rem;
-      letter-spacing: 0.75em; } }
+      letter-spacing: 0.75em;
+      text-indent: 0.375em; } }
   .sidebar__headline {
     display: none; }
     @media (max-width: 768px) {
@@ -116,7 +117,11 @@
   box-sizing: border-box;
   flex-basis: 60%;
   flex-grow: 1;
-  margin-left: 20%; }
+  margin-left: 20%;
+  padding: 0 2rem; }
+  @media (max-width: 768px) {
+    .main {
+      margin-left: 0; } }
   .main__container {
     /* box */
     height: 100%;
@@ -133,6 +138,10 @@
     max-width: 70rem;
     margin: 0 auto;
     padding: 4rem 2rem; }
+  @media (max-width: 768px) {
+    .main__profile {
+      /* box */
+      display: none; } }
   .main__label {
     /* box */
     display: inline-block; }
