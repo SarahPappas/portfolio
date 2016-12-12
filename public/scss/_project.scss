@@ -2,19 +2,39 @@
 	/* box */
 	margin-top: 4rem;
 
-	img {
-		/* box */
-		display: block;
-		height: auto;
-		max-width: 100%;
+	&__img-container {
+		/* background */
+		position: relative;
+	}
 
-		/* effects */
-		overflow: hidden;
+	img {
+		max-width: 100%;
 	}
 
 	&__img {
-		/* background */
-		position: relative;
+		/* box */
+		display: block;
+		height: auto;
+
+		/* effects */
+		overflow: hidden;
+
+		&--large {
+			@media #{$phone-large} {
+				/* box */
+				display: none;
+			}
+		}
+
+		&--tall {
+			/* box */
+			display: none;
+
+			@media #{$phone-large} {
+				/* box */
+				display: block;
+			}
+		}
 	}
 
 	&__img-title {
@@ -73,6 +93,11 @@
 		flex-direction: row;
 		justify-content: space-around;
 		align-items: center;
+
+		@media #{$phone-large} {
+			flex-direction: column;
+			padding-bottom: 1rem;
+		}
 	}
 
 	&__button {
@@ -90,6 +115,10 @@
 		a {
 			position: relative;
 			top: .6rem;
+		}
+
+		@media #{$phone-large} {
+			margin-bottom: 1rem;
 		}
 	}
 }
