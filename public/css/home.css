@@ -156,10 +156,8 @@
       color: #333;
       text-decoration: none; }
   .main__email {
-    /* box */
-    display: inline-block;
-    width: 24rem;
-    vertical-align: text-bottom; }
+    /* */
+    display: inline-block; }
 
 .project {
   /* box */
