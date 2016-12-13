@@ -148,13 +148,12 @@
       display: none; } }
   .main__contact-info {
     /* box */
-    display: inline-block;
-    /* text */
-    text-transform: capitalize; }
+    display: inline-block; }
     .main__contact-info a {
       /* text */
       color: #333;
-      text-decoration: none; }
+      text-decoration: none;
+      text-transform: capitalize; }
   .main__email {
     /* */
     display: inline-block; }

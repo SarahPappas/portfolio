@@ -49,13 +49,11 @@
 		/* box */
 		display: inline-block;
 
-		/* text */
-		text-transform: capitalize;
-
 		a {
 			/* text */
 			color: $text-color;
 			text-decoration: none;
+			text-transform: capitalize;
 		}
 	}
 
