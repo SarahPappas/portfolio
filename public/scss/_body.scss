@@ -32,6 +32,10 @@
 		max-width: 70rem;
 		margin: 0 auto;
 		padding: $padding;
+
+		@media #{$phone-large} {
+			padding: 4rem 0;
+		}
 	}
 
 	&__profile {
@@ -41,9 +45,18 @@
 		}
 	}
 
-	&__label {
+	&__contact-info {
 		/* box */
 		display: inline-block;
+
+		/* text */
+		text-transform: capitalize;
+
+		a {
+			/* text */
+			color: $text-color;
+			text-decoration: none;
+		}
 	}
 	
 	&__email {
