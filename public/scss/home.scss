@@ -4,56 +4,56 @@
 @import "project";
 
 * {
-	margin: 0;
-	padding: 0;
-	text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 html {
-	/* text */
-	font-size: 10px;
+    /* text */
+    font-size: 10px;
 
-	@media (max-width: 320px) {
-		/* text */
-		font-size: 8px;
-	}
+    @media (max-width: 320px) {
+        /* text */
+        font-size: 8px;
+    }
 }
 
 body {
-	/* background */
-	background-color: rgb(97%, 97%, 97%);
+    /* background */
+    background-color: rgb(97%, 97%, 97%);
 
-	/* text */
-	color: $text-color;
-	font-family: $font-sidebar;
-	font-size: $body-font-size;
-	font-weight: 300; 
-	line-height: 1.62;
+    /* text */
+    color: $text-color;
+    font-family: $font-sidebar;
+    font-size: $body-font-size;
+    font-weight: 300; 
+    line-height: 1.62;
 }
 
 h1 {
-	/* text */
-	text-transform: uppercase;
-	letter-spacing: 1.5em;
-	line-height: 2;	
-	font-size: 4rem;
+    /* text */
+    text-transform: uppercase;
+    letter-spacing: 1.5em;
+    line-height: 2;	
+    font-size: 4rem;
 }
 
 h2 {
-	/* text */
-	text-transform: uppercase;
-	font-weight: 300;
-	letter-spacing: .1em;
-	padding-bottom: 4rem;
+    /* text */
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: .1em;
+    padding-bottom: 4rem;
 }
 
 .h2-padding-exception {
-	padding-bottom: 0;
+    padding-bottom: 0;
 }
 
 h3 {
-	/* text */
-	font-weight: 300;
-	letter-spacing: .1em;
+    /* text */
+    font-weight: 300;
+    letter-spacing: .1em;
 }
 

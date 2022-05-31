@@ -1,141 +1,141 @@
 .project {
-	/* box */
-	margin-top: 4rem;
+    /* box */
+    margin-top: 4rem;
 
-	&__img-container {
-		/* background */
-		position: relative;
-	}
+    &__img-container {
+        /* background */
+        position: relative;
+    }
 
-	img {
-		max-width: 100%;
-	}
+    img {
+        max-width: 100%;
+    }
 
-	&__img {
-		/* box */
-		display: block;
-		height: auto;
+    &__img {
+        /* box */
+        display: block;
+        height: auto;
 
-		/* effects */
-		overflow: hidden;
+        /* effects */
+        overflow: hidden;
 
-		&--large {
-			/* box */
-			display: block;
+        &--large {
+            /* box */
+            display: block;
 
-			@media #{$phone-large} {
-				/* box */
-				display: none;
-			}
-		}
+            @media #{$phone-large} {
+                /* box */
+                display: none;
+            }
+        }
 
-		&--tall {
-			/* box */
-			display: none;
+        &--tall {
+            /* box */
+            display: none;
 
-			@media #{$phone-large} {
-				/* box */
-				display: block;
-			}
-		}
-	}
+            @media #{$phone-large} {
+                /* box */
+                display: block;
+            }
+        }
+    }
 
-	&__img-title {
-		/* box */
-		box-sizing: border-box;
-		display: block;
-		padding: 2rem;
-		margin: 0 auto;
-		width: 100%;
+    &__img-title {
+        /* box */
+        box-sizing: border-box;
+        display: block;
+        padding: 2rem;
+        margin: 0 auto;
+        width: 100%;
 
-		/* background */
-		background-color: rgba(255, 255, 255, .7);
-		position: absolute;
-		top: 0;
+        /* background */
+        background-color: rgba(255, 255, 255, .7);
+        position: absolute;
+        top: 0;
 
-		/* text */
-		font-size: 1.6rem;
-		font-weight: 300;
-		text-transform: uppercase;
-	}
+        /* text */
+        font-size: 1.6rem;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
 
-	&__description {
-		/* box */
-		border: solid 2px #ccc;
-		border-top: none;
-		padding: 0 2rem;
-		padding-top: 2rem; 
+    &__description {
+        /* box */
+        border: solid 2px #ccc;
+        border-top: none;
+        padding: 0 2rem;
+        padding-top: 2rem; 
 
-		a {
-			/* text */
-			color: $text-color;
-			text-decoration: none;
-		}
+        a {
+            /* text */
+            color: $text-color;
+            text-decoration: none;
+        }
 
-		a:visited {
-			/* text */
-			color: $text-color;	
-			text-decoration: none;
-		}
-	}
+        a:visited {
+            /* text */
+            color: $text-color;	
+            text-decoration: none;
+        }
+    }
 
-	&__item {
-		/* box */
-		padding-bottom: 2rem;
-	}
+    &__item {
+        /* box */
+        padding-bottom: 2rem;
+    }
 
-	&__buttons {
-		/* box */
-		display: flex;
+    &__buttons {
+        /* box */
+        display: flex;
 
-		/* text */
-		text-transform: uppercase;
-		font-size: 1.6rem;
+        /* text */
+        text-transform: uppercase;
+        font-size: 1.6rem;
 
-		/* flex children */
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: center;
+        /* flex children */
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
 
-		@media #{$phone-large} {
-			flex-direction: column;
-			padding-bottom: 1rem;
-		}
-	}
+        @media #{$phone-large} {
+            flex-direction: column;
+            padding-bottom: 1rem;
+        }
+    }
 
-	&__button {
-		/* box */
-		box-sizing: border-box;
-		width: 20rem;
-		height: 4rem;
-		padding: 0 1rem;
+    &__button {
+        /* box */
+        box-sizing: border-box;
+        width: 20rem;
+        height: 4rem;
+        padding: 0 1rem;
 
-		/* text */
-		text-align: center;
-		white-space: nowrap;
+        /* text */
+        text-align: center;
+        white-space: nowrap;
 
-		a {
-			/* box */
-			width: 100%;
-			height: 100%;
-			display: flex;
+        a {
+            /* box */
+            width: 100%;
+            height: 100%;
+            display: flex;
 
-			/* background */
-			background-color: $accent-color;
+            /* background */
+            background-color: $accent-color;
 
-			/* flex child element settings */
-			align-items: center;
-			justify-content: center;
-		}
+            /* flex child element settings */
+            align-items: center;
+            justify-content: center;
+        }
 
-		@media #{$phone-large} {
-			margin-bottom: 1rem;
-		}
-	}
+        @media #{$phone-large} {
+            margin-bottom: 1rem;
+        }
+    }
 
-	&__button-text {
-		display: block;
-		position: relative;
-		top: -.1rem;
-	}
+    &__button-text {
+        display: block;
+        position: relative;
+        top: -.1rem;
+    }
 }

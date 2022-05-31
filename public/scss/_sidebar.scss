@@ -1,87 +1,87 @@
 @import "navbuttons";
 
 .sidebar {
-	/* box */
-	box-sizing: border-box;
-	flex-grow: 1;
-	height: 100%;
-	width: 20%;
-	margin: auto;
+    /* box */
+    box-sizing: border-box;
+    flex-grow: 1;
+    height: 100%;
+    width: 20%;
+    margin: auto;
 
 
-	/* background */
-	background-color: #333;
-	background-position: 700px 0;
-	background-size: cover;
-	position: fixed;
-	left: 0px;
-	overflow: scroll;
+    /* background */
+    background-color: #333;
+    background-position: 700px 0;
+    background-size: cover;
+    position: fixed;
+    left: 0px;
+    overflow: scroll;
 
-	/* text */
-	color: rgb(97%, 97%, 97%);
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: .1em;
+    /* text */
+    color: rgb(97%, 97%, 97%);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .1em;
 
-	/* flex child element settings */
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
+    /* flex child element settings */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
 
-	@media #{$phone-large} {
-		/* box */
-		height: 20%;
-		width: 100%;
+    @media #{$phone-large} {
+        /* box */
+        height: 20%;
+        width: 100%;
 
-		/* background */
-		position: static;
-		top: 0px;
-		overflow: hidden;
+        /* background */
+        position: static;
+        top: 0px;
+        overflow: hidden;
 
-		/* flex child element settings */
-		flex-direction: column;
-	}
+        /* flex child element settings */
+        flex-direction: column;
+    }
 
-	&__profile-container {
-		/* box */
-		display: block;
-		flex-grow: 0;
-		padding: $padding;
-	}
+    &__profile-container {
+        /* box */
+        display: block;
+        flex-grow: 0;
+        padding: $padding;
+    }
 
-	&__name {
-		@media #{$phone-large} {
-			$letter-spacing: .75em;
+    &__name {
+        @media #{$phone-large} {
+            $letter-spacing: .75em;
 
-			/* box */
-			padding-right: -$letter-spacing /2;
+            /* box */
+            padding-right: -$letter-spacing /2;
 
-			/* text */
-			font-size: 4rem;
-			letter-spacing: $letter-spacing;
-			text-indent: $letter-spacing;
-		}
-		
-	}
+            /* text */
+            font-size: 4rem;
+            letter-spacing: $letter-spacing;
+            text-indent: $letter-spacing;
+        }
+        
+    }
 
-	&__headline {
-		display: none;
+    &__headline {
+        display: none;
 
-		@media #{$phone-large} {
-			/* box */
-			display: block;
-		}
-	}
+        @media #{$phone-large} {
+            /* box */
+            display: block;
+        }
+    }
 
-	&__profile-pic {
-		/* box */
-		border-radius: 50%;
-		height: 100px;
-		width: 100px;
+    &__profile-pic {
+        /* box */
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
 
-		@media #{$phone-large} {
-			display: none;
-		}
-	}
+        @media #{$phone-large} {
+            display: none;
+        }
+    }
 
 }

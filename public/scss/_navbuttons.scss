@@ -1,75 +1,75 @@
 .nav-buttons {
-	/* box */
-	display: block;
-	flex-grow: 0;
-	position: relative;
+    /* box */
+    display: block;
+    flex-grow: 0;
+    position: relative;
 
-	// The icon font library adds a bit of extra space on the top and bottom of 
-	// icons, which we want to take into account when we set our paddings.
-	$icon-font-offset: .3rem;
+    // The icon font library adds a bit of extra space on the top and bottom of 
+    // icons, which we want to take into account when we set our paddings.
+    $icon-font-offset: .3rem;
 
-	@media #{$phone-large}  {
-		/* box */
-		display: flex;
-		padding-bottom: 4rem;
+    @media #{$phone-large}  {
+        /* box */
+        display: flex;
+        padding-bottom: 4rem;
 
-		/* flex child element settings */
-		flex-direction: row;
-		justify-content: space-around;
-	}
-	
-	&__button {
-		padding-bottom: 3rem - $icon-font-offset;
+        /* flex child element settings */
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    &__button {
+        padding-bottom: 3rem - $icon-font-offset;
 
-		@media #{$phone-large} {
-			/* box */
-			padding-bottom: 0
-		}
-	}
+        @media #{$phone-large} {
+            /* box */
+            padding-bottom: 0
+        }
+    }
 
-	&__link-text {
-		padding-top: 1rem - $icon-font-offset;
+    &__link-text {
+        padding-top: 1rem - $icon-font-offset;
 
-		/* text */
-		color: rgb(97%, 97%, 97%);
-		font-size: 1.6rem;
-		line-height: 1rem;
-		text-align: center;
+        /* text */
+        color: rgb(97%, 97%, 97%);
+        font-size: 1.6rem;
+        line-height: 1rem;
+        text-align: center;
 
-		@media #{$phone-large} {
-			/* text */
-			font-size: 1.3rem;
-		}
-	}
+        @media #{$phone-large} {
+            /* text */
+            font-size: 1.3rem;
+        }
+    }
 
-	&__icon {
-		/*box*/
-		display: block;
+    &__icon {
+        /*box*/
+        display: block;
 
-		/* text */
-		font-size: 7rem;
+        /* text */
+        font-size: 7rem;
 
-		@media #{$phone-large} {
-			/* text */
-			font-size: 5rem;
-		}
+        @media #{$phone-large} {
+            /* text */
+            font-size: 5rem;
+        }
 
-		&--not-square {
-			padding-bottom: 1rem - .15rem;
-			font-size: 6rem;
+        &--not-square {
+            padding-bottom: 1rem - .15rem;
+            font-size: 6rem;
 
-			@media #{$phone-large} {
-				/* text */
-				font-size: 4rem;
-				padding-top: .3rem;
-				padding-bottom: .7rem;
-			}
-		}
-	}
+            @media #{$phone-large} {
+                /* text */
+                font-size: 4rem;
+                padding-top: .3rem;
+                padding-bottom: .7rem;
+            }
+        }
+    }
 
-	a {
-		/* text */
-		color: rgba(255, 255, 255, .5);
-		font-size: 6rem;
-	}
+    a {
+        /* text */
+        color: rgba(255, 255, 255, .5);
+        font-size: 6rem;
+    }
 }
